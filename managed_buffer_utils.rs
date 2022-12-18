@@ -125,7 +125,7 @@ impl<M: ManagedTypeApi> ManagedBufferUtils<M> for ManagedBuffer<M> {
             }
 
             result *= 10;
-            result += (i as char).to_digit(16)? as u64;
+            result += (i as char).to_digit(10)? as u64;
         }
 
         Some(result)
